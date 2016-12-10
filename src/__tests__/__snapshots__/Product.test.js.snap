@@ -1,5 +1,5 @@
 exports[`test Product renders name, price, and image from props 1`] = `
-<div
+<li
   className="c-product">
   <h2
     className="c-product__name">
@@ -13,5 +13,5 @@ exports[`test Product renders name, price, and image from props 1`] = `
     alt="Product 1"
     className="c-product__image"
     src="image-cdn.symphonycommerce.com/images/sites/fijiwater/1424736511908_6pack_straw_image_1.400w.jpg" />
-</div>
+</li>
 `;

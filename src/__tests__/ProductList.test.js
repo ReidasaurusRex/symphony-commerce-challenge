@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProductList from "../ProductList";
+import Product from "../Product"
 import renderer from 'react-test-renderer';
 
 test('ProductList creates Product components for each each product', () => {

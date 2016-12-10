@@ -1,0 +1,8 @@
+exports[`test ProductList creates Product components for each each product 1`] = `
+<ul
+  className="c-product-list">
+  <li>
+    Loading
+  </li>
+</ul>
+`;

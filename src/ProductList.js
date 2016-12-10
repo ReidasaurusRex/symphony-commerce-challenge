@@ -37,7 +37,6 @@ class ProductList extends Component {
         return <Product key={p.id} name={p.name} price={p.defaultPriceInCents} image={imageHref} />
       });
     }
-    console.log(items);
     return (
       <ul className="c-product-list">
         {items}
