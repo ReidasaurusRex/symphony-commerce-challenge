@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import $ from 'jquery';
+import './styles/ProductList.css';
 
 class ProductList extends Component {
   constructor(props) {
