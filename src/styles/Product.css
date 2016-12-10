@@ -1,0 +1,21 @@
+.c-product {
+  margin-top: 50px;
+}
+
+.c-product__text, .c-product__image {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c-product__text {
+  margin-left: 25px;
+  margin-top: 150px;
+  width: 350px;
+}
+
+@media (max-width: 755px) {
+  .c-product__text {
+    margin-top: 25px;
+    text-align: center;
+  }
+}
