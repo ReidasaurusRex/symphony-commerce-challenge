@@ -1,17 +1,20 @@
 exports[`test Product renders name, price, and image from props 1`] = `
 <li
   className="c-product">
-  <h2
-    className="c-product__name">
-    Product 1
-  </h2>
-  <p
-    className="c-product__price">
-    100
-  </p>
   <img
     alt="Product 1"
     className="c-product__image"
     src="image-cdn.symphonycommerce.com/images/sites/fijiwater/1424736511908_6pack_straw_image_1.400w.jpg" />
+  <div
+    className="c-product__text">
+    <h3
+      className="c-product__name">
+      Product 1
+    </h3>
+    <p
+      className="c-product__price">
+      100
+    </p>
+  </div>
 </li>
 `;
