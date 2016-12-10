@@ -6,11 +6,9 @@ class ProductList extends Component {
   constructor(props) {
     super(props);
 
-    this.componentDidMount = this.componentDidMount.bind(this);
-
     this.state = {
       products: [],
-      loading: true;
+      loading: true
     }
   }
 
@@ -25,8 +23,26 @@ class ProductList extends Component {
       }.bind(this),
       error: function(xhr, status, err) {
         console.log(url, status, err.toString());
-      }.bind(this)
+      }
     })
+  }
+
+  render() {
+    var items;
+    if (this.state.loading) {
+      items = (<li>Loading</li>);
+    } else {
+      items = this.state.products.map(p => {
+        let imageHref = "http:" + p.mainImage.ref;
+        return <Product key={p.id} name={p.name} price={p.defaultPriceInCents} image={imageHref} />
+      });
+    }
+    console.log(items);
+    return (
+      <ul className="c-product-list">
+        {items}
+      </ul>
+    );
   }
 }
 
