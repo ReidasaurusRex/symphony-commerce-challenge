@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ProductList from "../ProductList";
 import renderer from 'react-test-renderer';
 
-test('Creates Product components for each each product', () => {
+test('ProductList creates Product components for each each product', () => {
   const products = [
     {
       name: "Product 1",
